@@ -1,6 +1,6 @@
 /* eslint-disable quotes */
 
-import Dog from "./dog";
+import Dog from "../shared/dog";
 
 const yen = new Dog("Yen");
 

@@ -14,12 +14,22 @@
   },
   "eslintConfig": {
     "extends": "airbnb",
+    "env": {
+      "browser": true
+    },
+    "rules": {
+      "comma-dangle": "off",
+      "no-console": "off"
+    },
     "plugins": [
       "import"
     ]
   },
-  "dependencies": {},
+  "dependencies": {
+    "babel-polyfill": "^6.16.0"
+  },
   "devDependencies": {
+    "babel-loader": "^6.2.7",
     "babel-preset-latest": "^6.16.0",
     "del": "^2.2.2",
     "eslint": "^3.9.1",
@@ -29,6 +39,7 @@
     "eslint-plugin-react": "^6.5.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
-    "gulp-eslint": "^3.0.1"
+    "gulp-eslint": "^3.0.1",
+    "webpack-stream": "^3.2.0"
   }
 }
