@@ -1,4 +1,6 @@
-import Dog from "./dog"
+/* eslint-disable quotes */
+
+import Dog from "./dog";
 
 const yen = new Dog("Yen");
 
