@@ -11,7 +11,8 @@
     "presets": [
       "latest",
       "react"
-    ]
+    ],
+    "compact": false
   },
   "eslintConfig": {
     "extends": "airbnb",
@@ -20,7 +21,16 @@
     },
     "rules": {
       "comma-dangle": "off",
-      "no-console": "off"
+      "no-console": "off",
+      "new-cap": [
+        2,
+        {
+          "capIsNewExceptions": [
+            "Map",
+            "List"
+          ]
+        }
+      ]
     },
     "plugins": [
       "import"
@@ -28,10 +38,12 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.16.0",
+    "immutable": "^3.8.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-redux": "^4.4.5",
-    "redux": "^3.6.0"
+    "redux": "^3.6.0",
+    "redux-actions": "^0.13.0"
   },
   "devDependencies": {
     "babel-loader": "^6.2.7",
