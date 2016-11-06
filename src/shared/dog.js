@@ -6,6 +6,10 @@ class Dog {
   bark() {
     return `Bork Bork, I am ${this.name}, bork I say!`;
   }
+
+  barkInConsole() {
+    console.log(this.bark());
+  }
 }
 
 export default Dog;
